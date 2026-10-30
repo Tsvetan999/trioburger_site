@@ -1,16 +1,332 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bg">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://www.facebook.com/trioburger3">
-    <link rel="canonical" href="https://www.facebook.com/trioburger3">
-    <title>Redirecting to Facebook...</title>
-    <script>
-        window.location.href = "https://www.facebook.com/trioburger3";
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trio Burger / Трио Бургер</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <p>If you are not redirected automatically, 
-       <a href="https://www.facebook.com/trioburger3">click here</a>.</p>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <span class="logo-main">TRIO</span>
+        <span class="logo-sub">BURGER</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#menu" data-i18n="nav.menu">Меню</a>
+        <a href="#about" data-i18n="nav.about">За нас</a>
+        <a href="#contact" data-i18n="nav.contact">Контакти</a>
+      </nav>
+
+      <div class="header-right">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="bg">БГ</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <a href="tel:+359000000000" class="phone">+359 00 000 000</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <p class="hero-tag" data-i18n="hero.tag">Същия Вкус Като Първия Ден</p>
+      <h1 data-i18n="hero.title">TRIO BURGER</h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">Бургери направени с любов</p>
+      <div class="hero-info">
+        <p data-i18n="hero.address">ул. Бдин 13/1, Видин</p>
+        <p data-i18n="hero.hours">Понеделник – Събота: 10:00 – 20:30</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="section menu-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="menu.title">Меню</h2>
+
+      <div class="menu-tabs">
+        <button class="tab-btn active" data-tab="burgers" data-i18n="tab.burgers">Бургери</button>
+        <button class="tab-btn" data-tab="addons" data-i18n="tab.addons">Добавки</button>
+        <button class="tab-btn" data-tab="starters" data-i18n="tab.starters">Предястия</button>
+        <button class="tab-btn" data-tab="salads" data-i18n="tab.salads">Салати</button>
+      </div>
+
+      <!-- Burgers -->
+      <div class="menu-panel active" id="burgers">
+        <div class="menu-grid">
+          <!-- items will be injected or hard-coded below -->
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.beef">Телешки</h3>
+              <span class="price">6,00 EUR</span>
+            </div>
+            <p data-i18n="desc.beef">бриош питка, маруля, домат, телешко кюфте, чедър, яйце, бургер сос</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.chicken">Пилешки</h3>
+              <span class="price">4,50 EUR</span>
+            </div>
+            <p data-i18n="desc.chicken">бриош питка, маруля, домат, сирене халуми, карамелизиран лук, пилешко филе, бургер сос</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.pork">Свински</h3>
+              <span class="price">5,50 EUR</span>
+            </div>
+            <p data-i18n="desc.pork">бриош питка, маруля, краставица, свинско дърпано, чедър, BBQ сос</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.double-beef">Двоен Телешки</h3>
+              <span class="price">9,00 EUR</span>
+            </div>
+            <p data-i18n="desc.double-beef">бриош питка, маруля, домат, телешко кюфте, чедър, яйце, бургер сос</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.double-chicken">Двоен Пилешки</h3>
+              <span class="price">6,70 EUR</span>
+            </div>
+            <p data-i18n="desc.double-chicken">бриош питка, маруля, домат, сирене халуми, карамелизиран лук, пилешко филе, бургер сос</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.double-pork">Двоен Свински</h3>
+              <span class="price">8,00 EUR</span>
+            </div>
+            <p data-i18n="desc.double-pork">бриош питка, маруля, краставица, свинско дърпано, чедър, BBQ сос</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.caesar">Бургер Цезар</h3>
+              <span class="price">5,10 EUR</span>
+            </div>
+            <p data-i18n="desc.caesar">бриош питка, айсберг, пармезан, пилешко филе, дресинг Цезар</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.lentil">Червена Леща</h3>
+              <span class="price">4,50 EUR</span>
+            </div>
+            <p data-i18n="desc.lentil">бриош питка, маруля, домат, сирене халуми, кюфте червена леща, бургер сос</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.sweet-chili">Сладко Чили</h3>
+              <span class="price">5,50 EUR</span>
+            </div>
+            <p data-i18n="desc.sweet-chili">бриош питка, кисела краставица, пилешко филе, чедър, сладко чили, *сос*</p>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.spinach">Спанак</h3>
+              <span class="price">4,50 EUR</span>
+            </div>
+            <p data-i18n="desc.spinach">бриош питка, маруля, сирене халуми, кюфте спанак, бургер сос</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add-ons -->
+      <div class="menu-panel" id="addons">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.egg">Яйце</h3>
+              <span class="price">0,50 EUR</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.bacon">Бекон</h3>
+              <span class="price">1,00 EUR</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.jalapeno">Чушка халапеньо</h3>
+              <span class="price">0,80 EUR</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.caramelized">Карамелизиран лук</h3>
+              <span class="price">0,50 EUR</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.fries-sauce">Сос за картофи</h3>
+              <span class="price">1,00 EUR</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.burger-sauce">Сос за бургер</h3>
+              <span class="price">1,00 EUR</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.halloumi">Сирене халуми</h3>
+              <span class="price">1,00 EUR</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.cheddar">Чедър</h3>
+              <span class="price">1,00 EUR</span>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.fried-potatoes">Пържени картофи</h3>
+              <span class="price">1,50 EUR</span>
+            </div>
+            <p data-i18n="desc.fried-potatoes">Може да се добавят само към бургер 150 грама</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Starters -->
+      <div class="menu-panel" id="starters">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.fries">Порция Картофи</h3>
+              <span class="price">3,10 EUR</span>
+            </div>
+            <p data-i18n="desc.fries">300 грама</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.fries-sauce-side">Картофи със сос</h3>
+              <span class="price">3,60 EUR</span>
+            </div>
+            <p data-i18n="desc.fries-sauce-side">300 грама + сос за картофи</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.fries-cheddar">Картофи със сос и чедър</h3>
+              <span class="price">4,10 EUR</span>
+            </div>
+            <p data-i18n="desc.fries-cheddar">300 грама + сос за картофи + чедър</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.wings">Пикантни пилешки крилца</h3>
+              <span class="price">5,10 EUR</span>
+            </div>
+            <p data-i18n="desc.wings">250 грама</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.tenders">Пилешки филенца</h3>
+              <span class="price">6,50 EUR</span>
+            </div>
+            <p data-i18n="desc.tenders">250 грама</p>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.onion-rings">Панирани лучени кръгчета</h3>
+              <span class="price">3,60 EUR</span>
+            </div>
+            <p data-i18n="desc.onion-rings">250 грама</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Salads -->
+      <div class="menu-panel" id="salads">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3 data-i18n="item.caesar-salad">Цезар Салата</h3>
+              <span class="price">6,20 EUR</span>
+            </div>
+            <p data-i18n="desc.caesar-salad">Айсберг, чери домати, пармезан, запечено пилешко филе, дресинг Цезар</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery placeholder -->
+  <section class="section gallery-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="gallery.title">Снимки</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item placeholder">Photo 1</div>
+        <div class="gallery-item placeholder">Photo 2</div>
+        <div class="gallery-item placeholder">Photo 3</div>
+        <div class="gallery-item placeholder">Photo 4</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <h2 class="section-title" data-i18n="about.title">За нас</h2>
+      <p class="about-text" data-i18n="about.text">
+        Трио Бургер е малко семейно място, където приготвяме вкусни домашни бургери с висококачествени продукти и много любов.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <!-- Contact -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <h2 class="section-title" data-i18n="contact.title">Контакти</h2>
+
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p data-i18n="contact.address">ул. Бдин 13/1, Видин</p>
+        <p data-i18n="contact.hours">Понеделник – Събота: 10:00 – 20:30</p>
+        <p><a href="tel:+359000000000">+359 00 000 000</a></p>
+      </div>
+    </div>
+
+    <!-- Google Map -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2029.7409178711841!2d22.87525142013892!3d43.990659614297805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4753792b8f6803b3%3A0xa3ab1ff033982e26!2sTrio%20Burger!5e0!3m2!1sbg!2sbg!4v1793388998081!5m2!1sbg!2sbg">
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2021 Trio Burger / Трио Бургер</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
