@@ -77,7 +77,7 @@ const translations = {
     "hero.tag": "The Same Taste As The First Day",
     "hero.title": "TRIO BURGER",
     "hero.subtitle": "Burgers made with love",
-    "hero.address": "Bdin streen 13/1, Vidin",
+    "hero.address": "Bdin street 13/1, Vidin",
     "hero.hours": "Monday – Saturday: 10:00 – 20:30",
     "menu.title": "Menu",
     "tab.burgers": "Burgers",
@@ -88,7 +88,7 @@ const translations = {
     "about.title": "About us",
     "about.text": "Trio Burger is a small family place where we make delicious burgers with high-quality ingredients and a lot of love.",
     "contact.title": "Contact",
-    "contact.address": "Bdin streen 13/1, Vidin",
+    "contact.address": "Bdin street 13/1, Vidin",
     "contact.hours": "Monday – Saturday: 10:00 – 20:30",
 
     "item.beef": "Beef",
@@ -213,4 +213,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Animations
   initAnimations();
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const galleryGrid = document.getElementById("gallery-grid");
+  
+  if (galleryGrid) {
+    fetch("gallery.json")
+      .then(response => {
+        if (!response.ok) throw new Error("Could not load gallery.json");
+        return response.json();
+      })
+      .then(data => {
+        galleryGrid.innerHTML = ""; // Clear placeholder comments if any
+        data.forEach(item => {
+          const img = document.createElement("img");
+          img.src = item.src;
+          img.alt = item.alt;
+          img.loading = "lazy";
+          galleryGrid.appendChild(img);
+        });
+      })
+      .catch(error => console.error("Error loading gallery images:", error));
+  }
 });
